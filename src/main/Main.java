@@ -9,6 +9,10 @@ public class Main {
         window.setResizable(false); //不能调整大小
         window.setTitle("2d name");
 
+        GamePanel gamePanel = new GamePanel();
+        window.add(gamePanel);
+        window.pack();
+
         window.setLocationRelativeTo(null);
         window.setVisible(true);
 
