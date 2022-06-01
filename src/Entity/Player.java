@@ -2,9 +2,6 @@ package Entity;
 
 import main.GamePanel;
 import main.keyHandler;
-
-import javax.imageio.ImageIO;
-import javax.swing.plaf.basic.BasicTreeUI;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;

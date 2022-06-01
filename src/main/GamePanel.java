@@ -1,6 +1,7 @@
 package main;
 
 import Entity.Player;
+import tile.TileManger;
 
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicTreeUI;
@@ -12,13 +13,15 @@ public class GamePanel extends JPanel implements Runnable {
     final int scale = 3;
 
     public final int titleSize = originalTileSize * scale;
-    final int maxScreenCol = 16;
-    final int maxScreenRow = 12;
-    final int screenwitch = titleSize * maxScreenCol;
-    final int screenHeight = titleSize * maxScreenRow;
+    public final int maxScreenCol = 16;
+    public final int maxScreenRow = 12;
+    public final int screenwitch = titleSize * maxScreenCol;
+    public final int screenHeight = titleSize * maxScreenRow;
 
     ///设置帧数
     int FPS = 60;
+
+    TileManger tileM = new TileManger(this);
     ////键盘操作实例化
     keyHandler KeyH = new keyHandler();
     /// set player default position
@@ -114,7 +117,10 @@ public class GamePanel extends JPanel implements Runnable {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
 
+        ///background
+
         //绘制图形大小
+        tileM.draw(g2);
         player.draw(g2);
         g2.dispose();
     }
