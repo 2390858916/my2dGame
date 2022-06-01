@@ -46,8 +46,16 @@ public class GamePanel extends JPanel implements Runnable {
 
     }
 
+
+    //画布
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        Graphics2D g2 = (Graphics2D) g;
+
+        //绘制图形大小
+        g2.setColor(Color.white);
+        g2.fillRect(100, 100, titleSize, titleSize);
+        g2.dispose();
     }
 
 
