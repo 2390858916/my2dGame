@@ -52,28 +52,30 @@ public class Player extends Entity {
     }
 
     public void update() {
-        if (KeyH.upPressed) {
-            direction = "up";
-            y -= speed;
-        } else if (KeyH.downPressed) {
-            direction = "down";
-            y += speed;
-        } else if (KeyH.leftPressed) {
-            direction = "left";
-            x -= speed;
-        } else if (KeyH.rightPressed) {
-            direction = "right";
-            x += speed;
-        }
-        spriteCounter++;
-        if (spriteCounter > 13) {
-            if (spriteNum == 1) {
-                spriteNum = 2;
-            } else if (spriteNum == 2) {
-                spriteNum = 3;
-            } else if (spriteNum == 3)
-                spriteNum = 1;
-            spriteCounter = 0;
+        if (KeyH.upPressed || KeyH.downPressed || KeyH.leftPressed || KeyH.rightPressed) {
+            if (KeyH.upPressed) {
+                direction = "up";
+                y -= speed;
+            } else if (KeyH.downPressed) {
+                direction = "down";
+                y += speed;
+            } else if (KeyH.leftPressed) {
+                direction = "left";
+                x -= speed;
+            } else {
+                direction = "right";
+                x += speed;
+            }
+            spriteCounter++;
+            if (spriteCounter > 6) {
+                if (spriteNum == 1) {
+                    spriteNum = 2;
+                } else if (spriteNum == 2) {
+                    spriteNum = 3;
+                } else if (spriteNum == 3)
+                    spriteNum = 1;
+                spriteCounter = 0;
+            }
         }
     }
 
