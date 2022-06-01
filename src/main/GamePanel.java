@@ -16,7 +16,7 @@ public class GamePanel extends JPanel implements Runnable {
     final int screenHeight = titleSize * maxScreenRow;
 
     ///设置帧数
-    int FPS = 144;
+    int FPS = 60;
     ////键盘操作实例化
     keyHandler KeyH = new keyHandler();
     /// set player default position
@@ -43,29 +43,48 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
     @Override
+    // 第一种循环更新方法
+//    public void run() {
+//        double drawInterval = 1000000000 / FPS;
+//        double nextDrawTime = System.nanoTime() + drawInterval;
+//
+//
+//        //game action loop
+//        // 游戏在运行就重复写入过程
+//        while (gameThread != null) {
+//            //1，更新内容 角色位置
+//            //2. 更新图片内容 新场景
+//            update();
+//            repaint();
+//            try {
+//                double remainingTime = nextDrawTime - System.nanoTime();
+//                remainingTime = remainingTime / 1000000;
+//
+//                if (remainingTime < 0) {
+//                    remainingTime = 0;
+//                }
+//                Thread.sleep((long) remainingTime);
+//                nextDrawTime += drawInterval;
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
+
+    //第二种循环方法
     public void run() {
         double drawInterval = 1000000000 / FPS;
-        double nextDrawTime = System.nanoTime() + drawInterval;
-
-
-        //game action loop
-        // 游戏在运行就重复写入过程
+        double delta = 0;
+        long lastTime = System.nanoTime();
+        long currentTime;
         while (gameThread != null) {
-            //1，更新内容 角色位置
-            //2. 更新图片内容 新场景
-            update();
-            repaint();
-            try {
-                double remainingTime = nextDrawTime - System.nanoTime();
-                remainingTime = remainingTime / 1000000;
-
-                if (remainingTime < 0) {
-                    remainingTime = 0;
-                }
-                Thread.sleep((long) remainingTime);
-                nextDrawTime += drawInterval;
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            currentTime = System.nanoTime();
+            delta += (currentTime - lastTime) / drawInterval;
+            lastTime = currentTime;
+            if (delta >= 1) {
+                update();
+                repaint();
+                delta--;
             }
         }
     }
