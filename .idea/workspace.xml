@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2ad23ae-9dd0-42a4-8501-ce3ea40a8bf0" name="变更" comment="first commit">
+    <list default="true" id="b2ad23ae-9dd0-42a4-8501-ce3ea40a8bf0" name="变更" comment="绘制图新大小">
+      <change afterPath="$PROJECT_DIR$/src/main/keyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
     </list>
@@ -104,7 +105,28 @@
       <option name="project" value="LOCAL" />
       <updated>1653990425776</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="first commit">
+      <created>1654050938733</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654050938733</updated>
+    </task>
+    <task id="LOCAL-00007" summary="绘制图新大小">
+      <created>1654050963187</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654050963187</updated>
+    </task>
+    <task id="LOCAL-00008" summary="绘制图新大小">
+      <created>1654051000734</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654051000734</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,7 +143,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="绘制图新大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="绘制图新大小" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
