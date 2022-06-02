@@ -22,7 +22,7 @@ public class TileManger {
         tile = new Tile[10];
         mapTileNum = new int[gp.maxScreenCol][gp.maxScreenCol];
         getTileImage();
-        loadMap("/maps/mapss.txt");
+        loadMap("/maps/world.txt");
 
     }
 
@@ -35,14 +35,23 @@ public class TileManger {
             tile[1].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/wall.png")));
 
             tile[2] = new Tile();
-            tile[2].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/bulic.png")));
+            tile[2].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/water.jpg")));
+
+            tile[3] = new Tile();
+            tile[3].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/earth.png")));
+
+            tile[4] = new Tile();
+            tile[4].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/tree.png")));
+
+            tile[5] = new Tile();
+            tile[5].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/sand.png")));
 
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    // read txt
+    // read txt method
     public void loadMap(String filePath) {
         try {
             InputStream is = getClass().getResourceAsStream(filePath);

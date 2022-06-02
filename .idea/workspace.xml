@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2ad23ae-9dd0-42a4-8501-ce3ea40a8bf0" name="变更" comment="player move">
-      <change afterPath="$PROJECT_DIR$/res/maps/mapss.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/bulic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/wall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile/TileManger.java" afterDir="false" />
+    <list default="true" id="b2ad23ae-9dd0-42a4-8501-ce3ea40a8bf0" name="变更" comment="maps">
+      <change afterPath="$PROJECT_DIR$/res/maps/world.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/sand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/water.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile/TileManger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -55,8 +55,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\2dgame\my2dGame\res\maps" />
       <recent name="C:\Users\Administrator\Desktop\2dgame\my2dGame\res\tiles" />
+      <recent name="C:\Users\Administrator\Desktop\2dgame\my2dGame\res\maps" />
       <recent name="C:\Users\Administrator\Desktop\2dgame\my2dGame\res\player" />
     </key>
   </component>
@@ -201,7 +201,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654098406096</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="maps">
+      <created>1654163040487</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1654163040487</updated>
+    </task>
+    <task id="LOCAL-00018" summary="maps">
+      <created>1654163151580</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1654163151580</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +236,8 @@
     <MESSAGE value="move" />
     <MESSAGE value="move 2 mothod" />
     <MESSAGE value="player move" />
-    <option name="LAST_COMMIT_MESSAGE" value="player move" />
+    <MESSAGE value="maps" />
+    <option name="LAST_COMMIT_MESSAGE" value="maps" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
