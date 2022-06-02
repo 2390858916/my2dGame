@@ -42,7 +42,7 @@ public class TileManger {
         }
     }
 
-    // read txt
+    // read txt method
     public void loadMap(String filePath) {
         try {
             InputStream is = getClass().getResourceAsStream(filePath);
