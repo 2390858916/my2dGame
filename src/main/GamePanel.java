@@ -18,6 +18,11 @@ public class GamePanel extends JPanel implements Runnable {
     public final int screenwitch = titleSize * maxScreenCol;
     public final int screenHeight = titleSize * maxScreenRow;
 
+    public final int maxWorldCol = 50;
+    public final int maxWorldRow = 50;
+    public final int worldWidth = titleSize * maxWorldCol;
+    public final int worldHeight = titleSize * maxWorldRow;
+
     ///设置帧数
     int FPS = 60;
 
@@ -33,7 +38,7 @@ public class GamePanel extends JPanel implements Runnable {
 
     Thread gameThread;
 
-    Player player = new Player(this, KeyH);
+    public Player player = new Player(this, KeyH);
 
     public GamePanel() {
         this.setPreferredSize(new Dimension(screenwitch, screenHeight));
