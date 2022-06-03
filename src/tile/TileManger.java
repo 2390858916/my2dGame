@@ -92,7 +92,7 @@ public class TileManger {
             if (worldX + gp.titleSize > gp.player.worldX - gp.player.screenX &&
                     worldX - gp.titleSize < gp.player.worldX + gp.player.screenX &&
                     worldY + gp.titleSize > gp.player.worldY - gp.player.screenY &&
-                    worldY + gp.titleSize < gp.player.worldY + gp.player.screenY) {
+                    worldY - gp.titleSize < gp.player.worldY + gp.player.screenY) {
                 g2.drawImage(tile[tileNum].image, screeX, screeY, gp.titleSize, gp.titleSize, null);
             }
             worldCol++;
